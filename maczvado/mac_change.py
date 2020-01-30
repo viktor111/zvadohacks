@@ -1,5 +1,6 @@
 import subprocess
 import optparse
+import re
 
 def getArgs():
     parser = optparse.OptionParser()
@@ -8,7 +9,7 @@ def getArgs():
     (opt, arg) = parser.parse_args()
     if not opt.interface:
         parser.error("[-] Please specify an interface. Use --help for information.")
-    elif not op.new_mac:
+    elif not opt.new_mac:
         parser.error("[-] Please specify a new mac address. Use --help for information.")
     return opt
 
@@ -22,5 +23,12 @@ def changeMac(interface, new_mac):
     print("[+] interface up MAC changed")
 
 opt = getArgs()
-
 changeMac(opt.interface, opt.new_mac)
+
+def ifconfig():
+    ifconfigResult = subprocess.check_output(["ifconfig", opt.interface])
+    print(ifconfigResult)
+    return ifconfigResult
+
+macSearchResult = re.search(rb"\w\w:\w\w:\w\w:\w\w:\w\w", ifconfig())
+print(macSearchResult.group(0))
