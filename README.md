@@ -35,5 +35,5 @@ to run a tool use python3 [name of tool] [options]
 
 ## Authors
 
-* **Viktor Draganov** - *Initial work* - [PurpleBooth](https://github.com/viktor111)
+* **Viktor Draganov** - *Initial work* - [viktor111](https://github.com/viktor111)
 
