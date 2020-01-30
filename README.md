@@ -8,8 +8,6 @@ zvadohacks is tools build with python for web scouting sniffing and pen testing
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 ```
 - python 2.7
 - python 3.0
