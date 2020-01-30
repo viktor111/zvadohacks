@@ -31,4 +31,6 @@ def ifconfig():
     return ifconfigResult
 
 macSearchResult = re.search(rb"\w\w:\w\w:\w\w:\w\w:\w\w", ifconfig())
-print(macSearchResult.group(0))
+
+if not macSearchResult:
+    print("[-] could not read MAC address. Use --help for more info")
