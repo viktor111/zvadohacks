@@ -34,6 +34,7 @@ to run a tool use python3 [name of tool] [options]
 
 * [Python 2.7/3](https://www.python.org/) - Language used to write the tools
 
+* [Ubuntu Linux](https://ubuntu.com/) - OS used
 
 ## Authors
 
