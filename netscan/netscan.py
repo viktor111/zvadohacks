@@ -1,5 +1,12 @@
 import scapy.all as scapy
+import optparse
 from mac_vendor_lookup import MacLookup
+
+def getArgs():
+    parser= optparse.OptionParser()
+    parser.add_option("-i", "--ip", dest="ip", help="Input IP address using -i or --ip.")
+    (opt, arg) = parser.parse_args()
+    return opt
 
 def scan(ip):
     arpRequest = scapy.ARP(pdst=ip)
@@ -11,5 +18,6 @@ def scan(ip):
     for el in answered:
         print(el[1].psrc + "\t\t" + el[1].hwsrc + "\t\t" + MacLookup().lookup(el[1].hwsrc))
 
-scan("192.168.0.1/24")
+opt = getArgs()
+scan(opt.ip)
 
