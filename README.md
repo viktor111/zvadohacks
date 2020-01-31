@@ -13,6 +13,8 @@ zvadohacks is tools build with python for web scouting sniffing and pen testing
 - python 3.0
 - git
 - pip
+- pip3 install mac-vendor-lookup
+- pip install --pre scapy[complete]
 ```
 
 ### Installing
