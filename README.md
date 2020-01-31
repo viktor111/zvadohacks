@@ -1,6 +1,6 @@
 # zvadohacks
 
-zvadohacks is tools build with python for web scouting sniffing and pen testing
+zvadohacks are tools build with python for web scouting sniffing and pen testing
 
 ## Getting Started
 
