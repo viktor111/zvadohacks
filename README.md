@@ -7,7 +7,7 @@ zvadohacks are tools build with python for web scouting sniffing and pen testing
 ```
 mac-change
 ```
-Change your mac address just witha simple command whenever you want.
+Change your mac address just with a simple command whenever you want.
 ```
 net-scan
 ```
