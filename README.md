@@ -11,7 +11,7 @@ Change your mac address just with a simple command whenever you want.
 ```
 net-scan
 ```
-Scan all the devices on your wifi and siplay infromataion such as ip address mac address and manufacturer (make sure to include /24 at the end of the ip or you will not see all devices.)
+Scan all the devices on your wifi and diplay infromataion such as ip address mac address and manufacturer (make sure to include /24 at the end of the ip or you will not see all devices.)
 ```
 net-spoof
 ```
