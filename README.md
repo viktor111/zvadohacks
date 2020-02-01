@@ -17,8 +17,24 @@ net-spoof
 ```
 Trick the router and the victim by sending ARP packet to both with the MAC address of each other and become man in the middle listen for traffick.
 
+### Usage
+mac-change
+```
+cd ../change-mac
+sudo python3 mac_change.py -i [intefrace goes here] -m [new mac goes here]
+```
+net-scan
+```
+cd ../net-scan
+sudo python3 netscan.py -i [IP address goes here]
+```
+net-spoof
+```
+currently being worked on will update once done
+```
 
-### Prerequisites
+
+## Prerequisites
 
 ```
 - python 2.7
