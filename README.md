@@ -15,7 +15,7 @@ Scan all the devices on your wifi and diplay infromataion such as ip address mac
 ```
 net-spoof
 ```
-Trick the router and the victim by sending ARP packet to both with the MAC address of each other and become man in the middle. (you must enable forwarding and if using wifi must have wifi chpset wich can be in listen mode)
+Trick the router and the victim by sending ARP packet to both with the MAC address of each other and become man in the middle. (you must enable forwarding and if using wifi must have wifi chpset wich can be in monitor mode)
 ```
 sniffer
 ```
