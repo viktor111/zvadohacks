@@ -33,5 +33,5 @@ while True:
     spoof(opt.targetIp, opt.routerIp)
     spoof(opt.targetIp, opt.routerIp)
     counter += 2
-    print(f'[+] Packets sent --- {counter} --- times')
+    print(f'[+] Packets sent --- {counter} --- times targetIp - {opt.targetIp}')
     time.sleep(2)
