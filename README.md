@@ -19,7 +19,8 @@ Trick the router and the victim by sending ARP packet to both with the MAC addre
 ```
 sniffer
 ```
-Once you used net spoof to become man in the middle you can use sniffer tool to watch for incoming requests (GET, POST, etc) and extract data.
+Once you used net spoof to become man in the middle you can use sniffer tool to watch for incoming http requests (GET, POST, etc) and extract data like url username and password.
+
 ### Usage
 mac-change
 ```
@@ -36,9 +37,10 @@ net-spoof
 cd ../net-spoof
 sudo python3 netspoof.py -i [-target IP goes here] -r [router IP goes here]
 ```
-spoofer
+sniffer
 ```
-Currently being worked on will update once done.
+cd ../sniffer
+sudo python3 sniffer.py -i [your interface goes here]
 ```
 
 ## Prerequisites
