@@ -36,11 +36,10 @@ net-spoof
 cd ../net-spoof
 sudo python3 netspoof.py -i [-target IP goes here] -r [router IP goes here]
 ```
-```
 spoofer
 ```
 Currently being worked on will update once done.
-
+```
 
 ## Prerequisites
 
