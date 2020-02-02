@@ -15,7 +15,11 @@ Scan all the devices on your wifi and diplay infromataion such as ip address mac
 ```
 net-spoof
 ```
-Trick the router and the victim by sending ARP packet to both with the MAC address of each other and become man in the middle. (you must enable forwarding and if using wifi must have wifi chpset wich can be in listen mode)
+Trick the router and the victim by sending ARP packet to both with the MAC address of each other and become man in the middle. (you must enable forwarding and if using wifi must have wifi chpset wich can be in monitor mode)
+```
+sniffer
+```
+Once you used net spoof to become man in the middle you can use sniffer tool to watch for incoming requests (GET, POST, etc) and extract data.
 ### Usage
 mac-change
 ```
@@ -32,7 +36,10 @@ net-spoof
 cd ../net-spoof
 sudo python3 netspoof.py -i [-target IP goes here] -r [router IP goes here]
 ```
-
+spoofer
+```
+Currently being worked on will update once done.
+```
 
 ## Prerequisites
 
