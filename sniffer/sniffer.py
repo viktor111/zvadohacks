@@ -2,6 +2,16 @@ import scapy.all as scapy
 import optparse
 from scapy.layers import http
 
+def getArgs():
+    parser = optparse.OptionParser()
+    parser.add_option("-i", "--interface", dest="interface", help="Input your interface.")
+    (opt, arg) = parser.parse_args()
+    if not opt.interface:
+        parser.error("[-] Please specify an targetIp. Use --help for information.")
+
+    return opt
+
+
 def sniff(interface):
     scapy.sniff(iface=interface, store=False, prn=processPacket)
 
@@ -15,4 +25,6 @@ def processPacket(packet):
             for keyword in keywords:
                 print(load)
                 break
-sniff("enp3s0")
+
+opt = getArgs()
+sniff(opt.interface)
