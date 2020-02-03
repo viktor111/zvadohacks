@@ -46,6 +46,10 @@ sniffer
 cd ../sniffer
 sudo python3 sniffer.py -i [your interface goes here]
 ```
+dns-spoofer
+```
+This is still being worked on once done i will update.
+```
 
 ## Prerequisites
 
