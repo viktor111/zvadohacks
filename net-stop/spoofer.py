@@ -15,8 +15,16 @@ def getArgs():
 
 def createQueue(queueNum):
     subprocess.call(["iptables", "-I", "FORWARD", "-j", "NFQUEUE", "--queue-num", queueNum])
-    print('Queue created with number -{queueNum}-')
+    print("Queue created")
+
+def processPacket(packet):
+    print(packet)
+    packet.drop()
+
 
 opt = getArgs()
-# createQueue(opt.queueNum)
+createQueue(opt.queueNum)
+queue = netfilterqueue.NetfilterQueue()
+queue.bind(int(opt.queueNum), processPacket)
+queue.run()
 
