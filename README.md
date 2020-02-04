@@ -24,6 +24,8 @@ Once you used net spoof to become man in the middle you can use sniffer tool to 
 net-stop
 ```
 net-stop creates a queue in wich incoming packets to the traget with the spoofer are held and dropped so the target never gets a response.
+
+
 ### Usage
 mac-change
 ```
