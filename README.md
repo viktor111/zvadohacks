@@ -21,10 +21,9 @@ sniffer
 ```
 Once you used net spoof to become man in the middle you can use sniffer tool to watch for incoming http requests (GET, POST, etc) and extract data like url username and password.
 ```
-dns-spoofer
+net-stop
 ```
-Dns-spoofer allow you to trap packets in a que and send them to the target modified.
-
+net-stop creates a queue in wich incoming packets to the traget with the spoofer are held and dropped so the target never gets a response.
 ### Usage
 mac-change
 ```
@@ -46,9 +45,10 @@ sniffer
 cd ../sniffer
 sudo python3 sniffer.py -i [your interface goes here]
 ```
-dns-spoofer
+net-stop
 ```
-This is still being worked on once done i will update.
+cd ../net-stop
+sudo python3 stopper.py -q [number of queue goes here]
 ```
 
 ## Prerequisites
