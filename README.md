@@ -28,6 +28,7 @@ net-stop creates a queue in wich incoming packets to the traget with the spoofer
 ```
 dns-spoof
 ```
+Currently being worked on will update once done.
 
 ### Usage
 mac-change
