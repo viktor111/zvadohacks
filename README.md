@@ -56,6 +56,10 @@ net-stop
 cd ../net-stop
 sudo python3 stopper.py -q [number of queue goes here]
 ```
+dns-spoofer
+```
+Currently being worked on will update once done.
+```
 
 ## Prerequisites
 
