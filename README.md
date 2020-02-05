@@ -24,6 +24,12 @@ Once you used net spoof to become man in the middle you can use sniffer tool to 
 net-stop
 ```
 net-stop creates a queue in wich incoming packets to the traget with the spoofer are held and dropped so the target never gets a response.
+
+```
+dns-spoof
+```
+Currently being worked on will update once done.
+
 ### Usage
 mac-change
 ```
@@ -49,6 +55,10 @@ net-stop
 ```
 cd ../net-stop
 sudo python3 stopper.py -q [number of queue goes here]
+```
+dns-spoofer
+```
+Currently being worked on will update once done.
 ```
 
 ## Prerequisites
