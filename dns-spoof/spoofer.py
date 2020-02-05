@@ -1,5 +1,5 @@
 import netfilterqueue
-import scapy
+import scapy.all as scapy
 import subprocess
 import optparse
 
