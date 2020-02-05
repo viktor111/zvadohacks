@@ -20,12 +20,13 @@ def createQueue(queueNum):
 
 def processPacket(packet):
     scapyPacket = scapy.IP(packet.get_payload())
+    print(scapyPacket.show())
     packet.accept()
 
 
 opt = getArgs()
 createQueue(opt.queueNum)
 queue = netfilterqueue.NetfilterQueue()
-queue.bind(opt.queueNum, processPacket)
+queue.bind(int(opt.queueNum), processPacket)
 queue.run()
 
