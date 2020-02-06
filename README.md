@@ -72,6 +72,7 @@ after you exit run  iptables --flush to disband all the queues
 - pip
 - pip3 install mac-vendor-lookup
 - pip install --pre scapy[complete]
+- pip install NetfilterQueue (if you get error try running this first - sudo apt-get install libnetfilter-queue-dev libnetfilter-queue1)
 ```
 
 ### Installing
