@@ -28,7 +28,7 @@ net-stop creates a queue in wich incoming packets to the traget with the spoofer
 ```
 dns-spoof
 ```
-Currently being worked on will update once done.
+Captures and modifes DNS response so you can redirect the target IP to a new host
 
 ### Usage
 mac-change
@@ -58,7 +58,9 @@ sudo python3 stopper.py -q [number of queue goes here]
 ```
 dns-spoofer
 ```
-Currently being worked on will update once done.
+cd ../dns-spoof
+sudo python spoofer.py -q [number of queue goes her] -t [0 for no 1 yes] --oh [host to be spoofed goes here] -rh [redirect host goes here]
+after you exit run  iptables --flush to disband all the queues
 ```
 
 ## Prerequisites
