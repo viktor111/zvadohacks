@@ -62,6 +62,10 @@ cd ../dns-spoof
 sudo python spoofer.py -q [number of queue goes her] -t [0 for no 1 yes] --oh [host to be spoofed goes here] -rh [redirect host goes here]
 after you exit run  iptables --flush to disband all the queues
 ```
+download-intercept
+```
+Still being worked on will update once done.
+```
 
 ## Prerequisites
 
