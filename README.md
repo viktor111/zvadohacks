@@ -30,6 +30,11 @@ dns-spoof
 ```
 Captures and modifes DNS response so you can redirect the target IP to a new host
 
+```
+dns-spoof
+```
+Still being worked will update once done.
+
 ### Usage
 mac-change
 ```
@@ -62,6 +67,10 @@ cd ../dns-spoof
 sudo python spoofer.py -q [number of queue goes her] -t [0 for no 1 yes] --oh [host to be spoofed goes here] -rh [redirect host goes here]
 after you exit run  iptables --flush to disband all the queues
 ```
+download-intercept
+```
+Still being worked on will update once done.
+```
 
 ## Prerequisites
 
@@ -72,6 +81,7 @@ after you exit run  iptables --flush to disband all the queues
 - pip
 - pip3 install mac-vendor-lookup
 - pip install --pre scapy[complete]
+- pip install NetfilterQueue (if you get error try running this first - sudo apt-get install libnetfilter-queue-dev libnetfilter-queue1)
 ```
 
 ### Installing
