@@ -1,8 +1,6 @@
 import pyfiglet
 import sys
 sys.path.append("./")
-import change_mac
-
 
 banner = pyfiglet.figlet_format("Hello HACKERS!")
 print(banner)
@@ -16,7 +14,17 @@ def user_input():
         sys.exit()
     if "run" in command:
         run_command = command.split()
+        print(run_command)
         tool = run_command[1]
+        options = run_command[2]
+        if tool not in tools:
+            print("Pease insert correct tool name!")
+        if tool in tools:
+            if tool == "change_mac":
+                from change_mac import mac_change
+                def run():
+                    mac_change
+                run()
 
 while True:
     user_input()
