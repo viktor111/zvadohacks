@@ -33,8 +33,7 @@ def user_input():
                 print(new_mac)
                 mac_change.changeMac(interface, new_mac)
     if "help" in command:
-        print("this is help")
-
+        print("To be updated")
 while True:
     user_input()
 
