@@ -26,7 +26,7 @@ def user_input():
             print("Pease insert correct tool name!")
         if tool in tools:
             if tool == "change_mac":
-                print("whYYYYYYYYYYYYYYYYYYYYYYYY")
+                print("TEST---------------------")
                 interface = run_command[3]
                 new_mac = run_command[5]
                 print(interface)
