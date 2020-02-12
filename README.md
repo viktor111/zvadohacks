@@ -4,6 +4,11 @@ zvadohacks are tools build with python for web scouting sniffing and pen testin
 
 ## console
  The console is work in process console which will allow the user to run the tools without having to be in the directory of the tool. It is currently in experimental stage so you should run the tool from the directory.
+ 
+ How to use:
+ ```
+Will update once finished
+```
 
 ## Tools
  
