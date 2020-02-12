@@ -33,11 +33,6 @@ dns-spoof
 ```
 Captures and modifes DNS response so you can redirect the target IP to a new host
 
-```
-dns-spoof
-```
-Still being worked will update once done.
-
 ### Usage
 mac-change
 ```
