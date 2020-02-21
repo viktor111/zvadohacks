@@ -2,10 +2,35 @@
 
 zvadohacks are tools build with python for web scouting sniffing and pen testin
 
-## console
- The console is work in process console which will allow the user to run the tools without having to be in the directory of the tool. It is currently in experimental stage so you should run the tool from the directory.
+## BH_konsole
+ This is a console that allows you to run all the tools with simple commands. If you want to only download the console clone 
+ repo ---  https://github.com/viktor111/BH_konsol.git
  
  How to use:
+ Usage is ver simple.
+
+cd in the BH_konsol dir
+
+run the main.py (dont forget the sudo or some tools will nto work)
+
+sudo python3 main.py
+
+To use a tool
+
+run [tool number here] [options here]
+
+To get help
+
+help
+
+To get all commands
+
+commands
+
+To get info about tool
+
+info [tool num]
+
  ```
 Will update once finished
 ```
