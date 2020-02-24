@@ -1,6 +1,6 @@
 # zvadohacks
-
-zvadohacks are tools build with python for web scouting sniffing and pen testin
+[OUTDATED CHECK BH_KONSOL]
+zvadohacks are tools build with python for web scouting sniffing and pen testing
 
 ## BH_konsole
  This is a console that allows you to run all the tools with simple commands. If you want to only download the console clone 
